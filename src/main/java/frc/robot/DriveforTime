@@ -1,0 +1,58 @@
+// // Copyright (c) FIRST and other WPILib contributors.
+// // Open Source Software; you can modify and/or share it under the terms of
+// // the WPILib BSD license file in the root directory of this project.
+
+// package frc.robot;
+
+// import edu.wpi.first.wpilibj2.command.CommandBase;
+// import edu.wpi.first.wpilibj2.command.SubsystemBase;
+// import frc.robot.subsystems.DriveBase;
+
+// public class DriveforTime extends CommandBase {
+// // variables
+// private final DriveBase driveBase;
+// private final double speed;
+
+// private int counter = 0;
+// private int target = 0;
+
+// /** Creates a new DriveforTime. */
+// public DriveforTime(DriveBase driveBase, double speed, double seconds) {
+// this.driveBase - driveBase;
+// this.speed - speed;
+
+// // convert time in seconds to robot cycle (50 cycles/s)
+// target - (int)(seconds * 50);
+
+// addRequirements(driveBase);
+// // Use addRequirements() here to declare subsystem dependencies.
+// }
+
+// // Called when the command is initially scheduled.
+// @Override
+// public void initialize() {
+// }
+
+// // Called every time the scheduler runs while the command is scheduled.
+// @Override
+// public void execute() {}if(counter<target)
+
+// {
+// counter++;
+// }
+
+// driveBase.arcadeDrive(speed,0);
+// }
+
+// // Called once the command ends or is interrupted.
+// @Override
+// public void end(boolean interrupted) {
+// driveBase.arcadeDrive(0,0);
+// }
+
+// // Returns true when the command should end.
+// @Override
+// public boolean isFinished() {
+// return counter >= target;
+// }
+// }
